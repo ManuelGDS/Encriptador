@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width">
+        <style>img {max-width: 85%;}</style>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+        <title>Encriptador</title>
+    </head>
+    <body>
+        <header>
+            <img class="aluralogo" src="imagenes/Vector.png" alt="Logo de Alura">
+            <nav>
+                <ul>
+                    <li><a>Encriptador Alura by  ManuelGDS</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section>
+                <textarea class="text-area" cols="30" rows="10" placeholder="Ingrese el texto aquí" autofocus></textarea>
+                <div>
+                    <h6 class="info">Solo letras minúsculas y sin acentos</h6>
+                </div>
+                <div class="botones">
+                    <button class="b-encriptar" onclick="bencriptar()">Encriptar</button>
+                    <button class="b-desencriptar" onclick="bdesencriptar()">Desencriptar</button>
+
+                </div>
+            </section>
+        
+            <section>
+                    <textarea class="mensaje" cols="20" rows="10"></textarea>
+                        
+                    <div>
+                        <button class="b-copiar" onclick="copiar()">Copiar</button>
+                    </div> 
+            </section>
+        </main>
+        <footer>
+            <p class="copyright">&copy Copyright 
+                encriptador by Manuel</p>
+        </footer>
+        <script src="script.js"></script>
+    </body>
+</html>
